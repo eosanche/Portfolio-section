@@ -2,77 +2,236 @@
 <!-- Emerson -->
 <!-- March 14 2025 -->
 <html lang="en">
-<head>  
+  <head>
     <meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
-  <title>index.html</title>
-  
- <style>
-   body {
-     background-color: #1E2121;
-       display: flex;
+
+    <title>index.html</title>
+
+    <style>
+      body {
+        background-color: #1E2121;
+        display: flex;
         justify-content: center;
         align-items: center;
-     position: relative;
-          padding: 20px;
-   }
+        position: relative;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
 
-   
-    #image-container1 {
-      width: 90%;
-       height: 3000px;
-      clear: both;
-     position: absolute; 
+      #image-container1 {
+        width: 70%;
+        max-width: 550px;
+        position: relative;
+        display: flex;
         justify-content: center;
-            display: flex;
-       flex-direction: column;
-      align-items: center;
-      top: 1200px;
-      gap: 50px;
-   }
-      
-   #image-container1:hover {
-    color: #aeaca8;
-    }
-   
-   
-       .image-size {
-         width: 100%;
-  height: 30%;
-  object-fit: cover;
-    }
-   
+        align-items: center;
+        margin: 0 auto;
+        top: 330px;
+        right: 350px;
+      }
+
+      #image-background {
+        width: auto;
+        height: 500px;
+        display: inline;
+        position: relative;
+        float: left;
+      }
+
+      .imgcrop {
+        width: 550px;
+        height: 600px;
+        object-fit: cover;
+      }
+
+      #image-container2 {
+        width: 40%;
+        max-width: 180px;
+        position: absolute;
+        top: 750px;
+        margin-right: 250px;
+      }
+
+      #image-background2 {
+        width: 100%;
+        height: auto;
+        animation: rotateani 2s infinite steps(1, end);
+      }
+
+      @keyframes rotateani {
+        0% {
+          transform: rotate(2deg)
+        }
+
+        25% {
+          transform: rotate(-20deg)
+        }
+
+        50% {
+          transform: rotate(2deg)
+        }
+
+        75% {
+          transform: rotate(-20deg);
+        }
+      }
+
+      .imgcrop2 {
+        width: 170%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /*contact info footer */
+
+       .contact-info-bar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        padding: 15px;
+         padding-right: 30px;
+         padding-left: 30px;
+          padding-top: 20px;
+        background-color: #151616;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 1470px;
+      }
+
+      .contact-info-bar li {
+        list-style: none;
+        display: inline;
+        padding: 20px;
+      }
+
+      .contact-info-bar a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 10px;
+      }
 
 
-   /*nav bar*/
-   #nav {
+      .info-bar-copyright {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 2%;
+        padding: 15px;
+        background-color: #0E0E0E;
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        color: #FFFFFF;
+        top: 1550px;
+      }
+
+      /* Button leading to Portfolio */
+
+      .contactbutton {
+        position: absolute;
+        width: 130px;
+        height: 15px;
+        padding: 15px;
+        border: 2px solid white;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #FFFFFF;
+        top: 1280px;
+        transition: 0.5s all ease;
+        border-radius: 5px;
+
+      }
+
+      .contactbutton a {
+        display: flex;
+        color: inherit;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        margin-top: -15px;
+        margin-left: -15px;
+
+      }
+
+
+      .contactbutton:before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 100%;
+        bottom: 0%;
+        opacity: 0;
+        content: "";
+        background-color: #FFFFFF;
+        color: #151616;
+      }
+
+      .contactbutton:hover {
+        color: #151616;
+        transform: scale(1.1);
+      }
+
+
+      .contactbutton:hover:before {
+        transition: 0.5s all ease;
+        left: 0%;
+        right: 0%;
+        opacity: 1;
+        z-index: -1;
+      }
+
+      /*nav bar*/
+      #nav {
         font-size: 1em;
-     font-family: "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         padding: 5px;
-     margin: 5px;
+        margin: 5px;
         clear: both;
         float: none;
         width: 100%;
-        position: relative;
-     display: flex;
-     justify-content: center;
-     bottom: 30px;
-   }
-   
-   /*code for nav list*/
-        #nav li {
-        list-style: none;
-        display: inline;    
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        top: 0;
       }
-   
-        #nav ul {
+
+      /*code for nav list*/
+      #nav li {
+        list-style: none;
+        display: inline;
+      }
+
+      #nav ul {
         padding: 5px;
-          float: right;
-          display: flex;
-          
+        float: right;
+        display: flex;
+
       }
 
       #nav a {
@@ -84,153 +243,194 @@
       #nav a:hover {
         color: #aeaca8;
       }
-   
-    #nav a:active {
-        color: #aeaca8;
+
+      #nav a:active {
+        color: #262626;
       }
-   
+
       .navlinedivide {
-            display: inline-block;
+        display: inline-block;
         height: 15px;
         width: 2px;
         border-radius: 50px;
-            background-color: #FFFFFF; 
-            vertical-align: middle;
+        background-color: #FFFFFF;
+        vertical-align: middle;
+      }
+
+      /*text animation*/
+
+
+      .text-animation-box {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        justify-content: left;
+        width: 100%;
+        padding: 5px;
+        top: 160px;
+        left: 20px;
+      }
+
+      nameani {
+        display: flex;
+        position: relative;
+        font-size: 130px;
+        bottom: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        animation-name: First-Name;
+        animation-duration: 0.6s;
+        color: #FFF9F0;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      }
+
+
+      .decor-underlineheading2 {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .decor-underlineheading2::after {
+        bottom: 30px;
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: #FFFFFF;
+        position: absolute;
+        animation: lineani2 0.7s ease-in-out;
+        animation-delay: 0.6s;
+      }
+
+      @keyframes lineani2 {
+        0% {
+          width: 0%;
+          left: 0%;
         }
-   
-   /*text animation*/
-   
-   
-   .text-animation-box {
-     position: absolute; 
-     display: flex;
-     flex-direction: column;
-     align-items: left;
-     justify-content: center;
-     width: 100%;
-     padding: 5px;
-     top: 60%;
-     left: 10px;
-   }
-   
-   nameani {
-     display: flex;
-  position: relative;
-         font-size: 70px;
-     font-family: "Poppins", sans-serif;
-       font-weight: 600;
-  animation-name: First-Name;
-  animation-duration: 1s;
-     color: #FFF9F0;
-     text-shadow: 0px 0px 15px rgba(0, 0, 0, 5);
-}
-   
+
+        50% {
+          width: 100%;
+          left: 0%;
+        }
+
+        75% {
+          width: 100%;
+          left: 0%;
+        }
+
+        100% {
+          width: 0%;
+          left: 100%;
+        }
+      }
 
       .headingcontent {
-     position: absolute; 
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-  top: 750px;
-  text-align: left;
-width: 100%;
-padding: 5px;
-}
-   
-      headingcontentani {
-             display: flex;
-position: relative;
-         font-size: 55px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 350px;
+        text-align: left;
+        width: 100%;
+        padding: 5px;
+      }
+
+      .paragraphcontent {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 270px;
+        text-align: left;
+        width: 50%;
+      }
+
+      h1 {
+        padding: 20px;
+        font-size: 55px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
         width: 45%;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-         text-align: left;
-  animation-name: head-Name;
-  animation-duration: 1.9s;
-      color: #FFFFFF;
-        font-style: italic;
-   }
-   
-   h1 {
-    padding: 20px;
-         font-size: 55px;
-          display: flex;
-     position: relative;
-     width: 45%;
-     text-align: left;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-      color: #FFFFFF;
-   }
-   
-         p {
-      padding: 20px;
-         font-size: 20px;
-          display: flex;
-            flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     font-family: "Poppins", sans-serif;
-       font-weight: 300;
-      color: #FFFFFF;
-      margin-left: 500px;
-    }
-   
-#nameani {animation-timing-function: ease;}
-   @keyframes First-Name {
-  0%   {opacity: 0; top: 50px;}
-  100% {top: 0px;}
-}
-   
-   #lastnameani {animation-timing-function: ease;}
-     @keyframes Last-Name {
-  0%   {opacity: 0; top: 50px;}
-  100% {top: 0px;}
-}
-   
-      #subheadingani {animation-timing-function: ease;}
-     @keyframes Sub-Name {
-  0%   {opacity: 0; top: 50px;}
-  100% {top: 0px;}
-}
-   
-         #headingcontentani {animation-timing-function: ease-in-out;}
-     @keyframes head-Name {
-  0%   {opacity: 0; top: 0p;}
-  100% {top: 0px;}
-}
-   
-   
-   /* copy .hmtl on nav bar to the current stuff on this page*/
-  </style>
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        top: 1100px;
+        color: #FFFFFF;
+      }
+
+      p {
+        padding: 15px;
+        margin: 5px;
+        font-size: 25px;
+        display: flex;
+        position: relative;
+        text-align: left;
+        font-family: "Figtree", sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        left: 300px;
+      }
+
+      #nameani {
+        animation-timing-function: ease;
+      }
+
+      @keyframes First-Name {
+        0% {
+          opacity: 0;
+          bottom: -50px;
+        }
+
+        100% {
+          bottom: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-  
 
-     <div id="image-container1">
 
-           <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size">         
-        <img src="folgers_Final_logo_1-03.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size">
-          <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size">
+
+    <div class="text-animation-box">
+      <nameani id="nameani"> <span class="decor-underlineheading2">My Portfolio.</span></nameani>
     </div>
-    
+
+    <div id="image-container1">
+      <div id="image-background">
+        <img class="imgcrop" src="6D1A6458-min.JPG" alt="Profile Picture of a young male Filipino taken from the shoulders up">
+      </div>
+    </div>
+
+    <div id="image-container2">
+      <div id="image-background2">
+        <img class="imgcrop2" src="2901H1-01.png" alt="A robotic sci-fi mask">
+      </div>
+    </div>
+
+   
+    <div class="contact-info-bar">
+      <ul>
+        <li>Social(s):<a href="https://www.instagram.com/emiwhem/?igsh=MWQ5dzU2bjNnZ3lrNA%3D%3D#"><u>Instagram</u></a></li>
+        <li>Email: sanchez.o.emerson@gmail.com</li>
+        <li>Tel: 905-781-0185</li>
+      </ul>
+    </div>
+
+    <div class="info-bar-copyright">
+      ©2025 Emerson Sanchez. Powered by 5 double cheeseburgers
+    </div>
+
     <div id="nav">
-       <ul>
-            <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
-            <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
-            <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <ul>
+        <li><a href="index.html">Home</a><span class="navlinedivide"></span></li>
+        <li><a href="about.html">About Me</a><span class="navlinedivide"></span></li>
+        <li><a href="portfolio.html">Portfolio</a><span class="navlinedivide"></span></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    
-
-<div class="text-animation-box">
-    <nameani id="nameani">PORTFOLIO</nameani>
-   </div>
-    
-
-    
   </body>
 </html>
-
