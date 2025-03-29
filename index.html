@@ -27,59 +27,30 @@
 
       /* All images containers and hover states */
 
-      #image-container1 {
-        background-color: transparent;
-        width: 90%;
-        height: 800px;
-        clear: both;
-        position: absolute;
-        justify-content: center;
+      .image-gallery {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 1660px;
+        flex-wrap: wrap; 
+            width: 90%;
+            margin: auto;
+            position: absolute;
+            top: 100px;
+      }
+      
+      .image-containers {
+        background-color: transparent;
+        width: 45%;
+        height: auto;
+margin-bottom: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
         opacity: 0.1;
-        border-radius: 20px;
-        overflow: hidden;
+             overflow: hidden;
+            position: relative; 
+             justify-content: center; 
+            align-items: center; 
         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-     #image-container1:before {
-    content: "Written In The Stars";
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-    font-style: italic;
-     color: #FFF9F0;
-    position: absolute;
-    top: 35%;
-    width: 65%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-      #image-container1::after {
-        content: "LAYOUT DESIGN";
-        font-size: 40px;
-        font-family: "Figtree", sans-serif;
-        font-weight: 400;
-        width: 25%;
-        color: #FFF9F0;
-           bottom: 45%;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      #image-container1:hover {
-        opacity: 1;
-        transform: scale(1.01);
-      }
-
-      #image-container1:hover::before, #image-container1:hover::after {
-        opacity: 1;
-      }
+  
 
       .image-size1 {
         width: 100%;
@@ -87,121 +58,11 @@
         object-fit: cover;
       }
 
-      #image-container2 {
-        color: transparent;
-        width: 90%;
-        height: 800px;
-        clear: both;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 2560px;
-        opacity: 0.1;
-        overflow: hidden;
-        border-radius: 20px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
-      }
-#image-container2::before {
-    content: "Folgers";
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-    font-style: italic;
-     color: #1E2121;
-    position: absolute;
-    top: 32%;
-    width: 25%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-      #image-container2::after {
-        content: "REBRANDING & PRODUCT DESIGN";
-      font-size: 40px;
-        font-family: "Figtree", sans-serif;
-        font-weight: 400;
-        width: 51%;
-        color: #1E2121;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      #image-container2:hover {
-        color: #000000;
-        opacity: 1;
-        transform: scale(1.01);
-      }
-
-      #image-container2:hover::before, #image-container2:hover::after {
-        opacity: 1;
-      }
-
+     
       .image-size2 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-
-      #image-container3 {
-        color: transparent;
-        width: 90%;
-        height: 800px;
-        clear: both;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 3460px;
-        opacity: 0.1;
-        overflow: hidden;
-        border-radius: 20px;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
-      }
-      
-#image-container3::before {
-    content: "In Good Spirits";
-    font-size: 80px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 650;
-    font-style: italic;
-    color: #FFF9F0;
-    position: absolute;
-    top: 35%;
-    width: 50%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-      #image-container3::after {
-        content: "3D DESIGN";
-        font-size: 40px;
-        font-family: "Figtree", sans-serif;
-        font-weight: 400;
-        width: 20%;
-        color: #FFF9F0;
-           bottom: 45%;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      #image-container3:hover {
-        color: #000000;
-        opacity: 1;
-        transform: scale(1.01);
-      }
-#image-container3:hover::before,
-      #image-container3:hover::after {
-        opacity: 1;
       }
       
 
@@ -210,6 +71,38 @@
         height: 100%;
         object-fit: cover;
       }
+      
+               .image-containers:hover {
+        opacity: 1;
+        transform: scale(1.01);
+                 
+      }
+        
+            .image-titles {
+            position: absolute;
+            top: 50%; 
+            left: 25%; 
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size: 40px;
+            font-weight: 650;
+            font-style: italic;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+              
+              
+        }
+      
+             .image-containers:hover .image-titles{
+        opacity: 1;
+        transform: scale(1.01);
+      }
+        
+          .image-containers a {
+            text-decoration: none; 
+            color: inherit; 
+        }
 
       /*contact info footer */
 
@@ -620,22 +513,26 @@
     </style>
   </head>
   <body>
-
-    <div id="image-container1">
+<div class="image-gallery">
+    <div class="image-containers">
       <a href="portfolio.html">
         <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
+        <div class="image-titles">
+        <a href="portfolio.html">Layout Design</a>
+        </div>
       </a>
     </div>
 
-    <div id="image-container2">
-      <img src="folgers_Final_logo_1-03" alt="A text graphic re-design of the coffee brand: Folgers, that includes a mountian and a slightly hidden sun" class="image-size2">
+    <div class="image-containers">
+      <img src="folgers_Final_logo_1-03.jpg" alt="A text graphic re-design of the coffee brand: Folgers, that includes a mountian and a slightly hidden sun" class="image-size2">
     </div>
 
-    <div id="image-container3">
+    <div class="image-containers">
       <a href="3DDesign.html">
       <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
 </a>
     </div>
+  </div>
 
     
  <div class="paragraphcontent">
