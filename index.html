@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>index.html</title>
 
@@ -29,28 +29,28 @@
 
       .image-gallery {
         display: flex;
-        flex-wrap: wrap; 
-            width: 90%;
-            margin: auto;
-            position: absolute;
-            top: 100px;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        position: absolute;
+        top: 340px;
       }
-      
+
       .image-containers {
         background-color: transparent;
         width: 45%;
         height: auto;
-margin-bottom: 20px;
+        margin-bottom: 20px;
         margin-right: 20px;
         border-radius: 10px;
         opacity: 0.1;
-             overflow: hidden;
-            position: relative; 
-             justify-content: center; 
-            align-items: center; 
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        align-items: center;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease;
       }
-  
+
 
       .image-size1 {
         width: 100%;
@@ -58,51 +58,48 @@ margin-bottom: 20px;
         object-fit: cover;
       }
 
-     
+
       .image-size2 {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      
+
 
       .image-size3 {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      
-               .image-containers:hover {
-        opacity: 1;
-        transform: scale(1.01);
-                 
+
+      .image-titles {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 40px;
+        font-weight: 650;
+        font-style: italic;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
       }
-        
-            .image-titles {
-            position: absolute;
-            top: 50%; 
-            left: 25%; 
-            color: white;
-            font-family: "Poppins", sans-serif;
-            font-size: 40px;
-            font-weight: 650;
-            font-style: italic;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-              
-              
-        }
-      
-             .image-containers:hover .image-titles{
+
+      .image-containers:hover {
         opacity: 1;
         transform: scale(1.01);
       }
-        
-          .image-containers a {
-            text-decoration: none; 
-            color: inherit; 
-        }
+
+      .image-containers:hover .image-titles {
+        opacity: 1;
+        transform: scale(1.01);
+      }
+
+      .image-containers a {
+        text-decoration: none;
+        color: inherit;
+      }
 
       /*contact info footer */
 
@@ -181,7 +178,7 @@ margin-bottom: 20px;
         display: flex;
         color: inherit;
         text-decoration: none;
-             flex-direction: column;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -213,7 +210,7 @@ margin-bottom: 20px;
         transform: scale(1.1);
 
       }
-      
+
 
       .porfoliobutton:hover:before {
         transition: 0.5s all ease;
@@ -221,15 +218,15 @@ margin-bottom: 20px;
         right: 0%;
         opacity: 1;
         z-index: -1;
-        
+
       }
 
       /*nav bar*/
       #nav {
+        background-color: #151616;
         font-size: 1em;
         font-family: "Poppins", sans-serif;
         padding: 5px;
-        margin: 5px;
         clear: both;
         float: none;
         width: 100%;
@@ -303,7 +300,7 @@ margin-bottom: 20px;
         text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
       }
 
-    /* keyframe animations */
+      /* keyframe animations */
 
       #nameani {
         animation-timing-function: ease;
@@ -341,6 +338,7 @@ margin-bottom: 20px;
           top: 0px;
         }
       }
+
       /* header quote container */
 
       .headingcontent {
@@ -427,50 +425,54 @@ margin-bottom: 20px;
         top: 1300px;
       }
 
-     .decor-underlineheading2 {
-    position: relative;
-    text-align: center;
-    display: inline-block; 
-       animation: glow-text 5s infinite ease-in-out;
-}
+      .decor-underlineheading2 {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        animation: glow-text 5s infinite ease-in-out;
+      }
 
-.decor-underlineheading2::after {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 3px;
-    background-color: #FFFFFF;
-    position: absolute;
-    bottom: -10px; 
-    animation: lineani2 5s infinite ease;
-}
-      
-@keyframes glow-text {
-    0% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
-    }
-    20% {
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-    }
-    100% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0);
-    }
-}
-      
-@keyframes lineani2 {
-    0% {
+      .decor-underlineheading2::after {
+        content: "";
+        display: block;
         width: 0%;
-       left: 0%;
-    }
-    50% {
-        width: 100%;
-        left: 0%;
-    }
-    100% {
-        width: 0%;
-       left: 100%;
-    }
-}
+        height: 3px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: -10px;
+        animation: lineani2 5s infinite ease;
+      }
+
+      @keyframes glow-text {
+        0% {
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+        }
+
+        20% {
+          text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        100% {
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+        }
+      }
+
+      @keyframes lineani2 {
+        0% {
+          width: 0%;
+          left: 0%;
+        }
+
+        50% {
+          width: 100%;
+          left: 0%;
+        }
+
+        100% {
+          width: 0%;
+          left: 100%;
+        }
+      }
 
 
       h2 {
@@ -486,15 +488,15 @@ margin-bottom: 20px;
         color: #FFFFFF;
         top: 4300px;
       }
-      
-         .paragraphcontent {
+
+      .paragraphcontent {
         display: flex;
         position: absolute;
         flex-direction: column;
         top: 200px;
         text-align: left;
         width: 70%;
-           left: 50px;
+        left: 50px;
       }
 
       p {
@@ -508,38 +510,55 @@ margin-bottom: 20px;
         font-weight: 300;
         color: #FFFFFF;
       }
-
-  
     </style>
   </head>
   <body>
-<div class="image-gallery">
-    <div class="image-containers">
-      <a href="portfolio.html">
-        <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
-        <div class="image-titles">
-        <a href="portfolio.html">Layout Design</a>
-        </div>
-      </a>
+    <div class="image-gallery">
+      <div class="image-containers">
+        <a href="portfolio.html">
+          <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
+          <div class="image-titles">
+            <a href="portfolio.html">Layout Design</a>
+          </div>
+        </a>
+      </div>
+
+      <div class="image-containers">
+        <img src="folgers_Final_logo_1-03.jpg" alt="A text graphic re-design of the coffee brand: Folgers, that includes a mountian and a slightly hidden sun" class="image-size2">
+      </div>
+
+      <div class="image-containers">
+        <a href="3DDesign.html">
+          <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
+        </a>
+      </div>
+      
+            <div class="image-containers">
+        <a href="3DDesign.html">
+          <img src="Floral_arrangement.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
+        </a>
+      </div>
+      
+                  <div class="image-containers">
+        <a href="3DDesign.html">
+          <img src="Logo-Relocate-01.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
+        </a>
+      </div>
+      
+                  <div class="image-containers">
+        <a href="3DDesign.html">
+          <img src="The Silent Struggle_TN.jpg" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
+        </a>
+      </div>
+      
     </div>
 
-    <div class="image-containers">
-      <img src="folgers_Final_logo_1-03.jpg" alt="A text graphic re-design of the coffee brand: Folgers, that includes a mountian and a slightly hidden sun" class="image-size2">
-    </div>
 
-    <div class="image-containers">
-      <a href="3DDesign.html">
-      <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size3">
-</a>
-    </div>
-  </div>
-
-    
- <div class="paragraphcontent">
+    <div class="paragraphcontent">
 
       <p> Here is the rest of my work in this digital portfolio. each of these projects are in relation to my skill sets, explore each of my works in more detail.  </p>
     </div>
-    
+
     <div class="contact-info-bar">
       <ul>
         <li>Social(s):<a href="https://www.instagram.com/emiwhem/?igsh=MWQ5dzU2bjNnZ3lrNA%3D%3D#"><u>Instagram</u></a></li>
@@ -549,7 +568,7 @@ margin-bottom: 20px;
     </div>
 
     <div class="info-bar-copyright">
-   ©2025 Emerson Sanchez. Powered by 5 double cheeseburgers
+      ©2025 Emerson Sanchez. Powered by 5 double cheeseburgers
     </div>
 
 
