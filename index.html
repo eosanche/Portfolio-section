@@ -28,29 +28,29 @@
       /* All images containers and hover states */
 
       .image-gallery {
-    column-count: 3; 
-    width: 90%;
-    margin: auto;
-    position: absolute;
-    top: 340px;
-}
+        column-count: 3;
+        width: 90%;
+        margin: auto;
+        position: absolute;
+        top: 340px;
+      }
 
-.image-containers {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 1;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
-}
-      
+      .image-containers {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 1;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+      }
+
       .image-containers img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-       transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
 
       .image-size1 {
         width: 100%;
@@ -61,10 +61,10 @@
       .image-titles {
         position: absolute;
         width: 100%;
-        top: 50%;
+        top: 40%;
         color: white;
         font-family: "Poppins", sans-serif;
-        font-size: 40px;
+        font-size: 60px;
         font-weight: 650;
         font-style: italic;
         text-align: center;
@@ -72,14 +72,14 @@
         transition: opacity 0.3s ease-in-out;
       }
 
- .image-containers:hover img {
-    opacity: 0.1;
-   transform: scale(1.01);
-}
+      .image-containers:hover img {
+        opacity: 0.1;
+        transform: scale(1.01);
+      }
 
-.image-containers:hover .image-titles {
-    opacity: 1;
-}
+      .image-containers:hover .image-titles {
+        opacity: 1;
+      }
 
       .image-containers a {
         text-decoration: none;
@@ -103,7 +103,7 @@
         font-size: 15px;
         font-weight: 300;
         color: #FFFFFF;
-        top: 1550px;
+        top: 1750px;
       }
 
       .contact-info-bar li {
@@ -134,7 +134,7 @@
         font-size: 10px;
         font-weight: 300;
         color: #FFFFFF;
-        top: 1620px;
+        top: 1820px;
       }
 
       .info-bar-copyright li {
@@ -433,45 +433,59 @@
   <body>
     <div class="image-gallery">
       <div class="image-containers">
-        <a href="portfolio.html">
+        <a href="LayoutDesign.html">
           <img src="Written_in_the_Stars_Covers-Indesign2.jpg" alt="An astronaut with an empty helmet with many animals in the shape of star constellations in the background" class="image-size1">
           <div class="image-titles">
-            <a href="portfolio.html">Layout Design</a>
+            <a href="LayoutDesign.html">Layout Design</a>
           </div>
         </a>
       </div>
 
       <div class="image-containers">
+          <a href="BrandDesign.html">
         <img src="folgers_Final_logo_1-03.jpg" alt="A text graphic re-design of the coffee brand: Folgers, that includes a mountian and a slightly hidden sun" class="image-size1">
-                <div class="image-titles">
-            <a href="portfolio.html">Brand Design</a>
-          </div>
+        <div class="image-titles">
+          <a href="BrandDesign.html">Brand Design</a>
+        </div>
+        </a>
       </div>
 
       <div class="image-containers">
         <a href="3DDesign.html">
           <img src="In_Good_Spirits0072-Compressed.png" alt="3D render of a Ghibli Landscape with moving grass, flowers, and leaves." class="image-size1">
+          <div class="image-titles">
+            <a href="3DDesign.html">3D Design</a>
+          </div>
         </a>
       </div>
-      
-            <div class="image-containers">
+
+      <div class="image-containers">
         <a href="3DDesign.html">
           <img src="Floral_arrangement.jpg" alt="A graphic design of a japanese demon mask, stylized in a sci-fi and futuristic way with flowers behind the mask" class="image-size1">
+          <div class="image-titles">
+            <a href="portfolio.html">Graphic Design</a>
+          </div>
         </a>
       </div>
-      
-                  <div class="image-containers">
+
+      <div class="image-containers">
         <a href="3DDesign.html">
           <img src="Logo-Relocate-01.jpg" alt="A title of the student made application Relocate. The graphic also replaces the locate portion with a location logo." class="image-size1">
+          <div class="image-titles">
+            <a href="portfolio.html">UI/UX Design</a>
+          </div>
         </a>
       </div>
-      
-                  <div class="image-containers">
+
+      <div class="image-containers">
         <a href="3DDesign.html">
           <img src="The Silent Struggle_TN.jpg" alt="A photo with beautiful flowers lighted in a golden sun with the text The Silent Struggle, a student documentary on the bellow." class="image-size1">
+          <div class="image-titles">
+            <a href="portfolio.html">Filmography</a>
+          </div>
         </a>
       </div>
-      
+
     </div>
 
 
